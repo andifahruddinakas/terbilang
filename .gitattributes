@@ -1,2 +1,8 @@
-/.github export-ignore
-/tests export-ignore
+.gitignore merge=ours
+
+# Jangan sertakan file dan folder ini ke rilis
+/.github           export-ignore
+/.editorconfig     export-ignore
+/.gitattributes    export-ignore
+/.gitignore        export-ignore
+/tests             export-ignore

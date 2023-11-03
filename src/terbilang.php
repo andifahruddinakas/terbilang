@@ -1,6 +1,6 @@
 <?php
 
-use Nasution\Terbilang;
+use Akas\Terbilang;
 
 if (! function_exists('terbilang')) {
     function terbilang($value) {

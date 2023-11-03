@@ -1,6 +1,6 @@
 <?php
 
-use Nasution\Terbilang;
+use Akas\Terbilang;
 
 class TerbilangTest extends \PHPUnit_Framework_TestCase
 {
@@ -98,7 +98,7 @@ class TerbilangTest extends \PHPUnit_Framework_TestCase
     /**
      * Test for Terbilang::convert().
      *
-     * @expectedException \Nasution\NotNumbersException
+     * @expectedException \Akas\NotNumbersException
      * @group default
      */
     public function testShouldThrowAnErrorIfValueIsNotNumeric()
@@ -166,7 +166,7 @@ class TerbilangTest extends \PHPUnit_Framework_TestCase
     /**
      * Test for Terbilang::revert().
      *
-     * @expectedException \Nasution\NotStringsException
+     * @expectedException \Akas\NotStringsException
      * @group default
      */
     public function testShouldThrowAnErrorIfValueIsNotString()
@@ -180,7 +180,7 @@ class TerbilangTest extends \PHPUnit_Framework_TestCase
     /**
      * Test for Terbilang::revert().
      *
-     * @expectedException \Nasution\ContainsNonNumericWords
+     * @expectedException \Akas\ContainsNonNumericWords
      * @group default
      */
     public function testShouldThrowAnErrorIfValueContainsNonNumericWords()

@@ -1,24 +1,18 @@
 # Terbilang
 
-[![Build Status](https://github.com/mul14/terbilang-php/workflows/build/badge.svg)](https://github.com/mul14/terbilang-php/actions/workflows/build.yml)
-[![Latest Stable Version](https://poser.pugx.org/nasution/terbilang/v/stable.svg)](https://packagist.org/packages/nasution/terbilang)
-[![Total Downloads](https://poser.pugx.org/nasution/terbilang/downloads.svg)](https://packagist.org/packages/nasution/terbilang)
-[![Latest Unstable Version](https://poser.pugx.org/nasution/terbilang/v/unstable.svg)](https://packagist.org/packages/nasution/terbilang)
-[![License](https://poser.pugx.org/nasution/terbilang/license.svg)](https://github.com/mul14/terbilang-php/blob/master/LICENSE)
+Mengubah angka menjadi kata (dan sebaliknya) dalam bahasa Indonesia.
 
-Convert numbers into words (and vice-versa) in Indonesian language.
+## Pemasangan
 
-## Installation
-
-Run [composer](http://getcomposer.org) command
+Jalankan perintah [composer](http://getcomposer.org)
 
 ```bash
-composer require nasution/terbilang
+composer require akas/terbilang
 ```
 
-## Usage
+## Penggunaan
 
-Using the  `terbilang()` and `tersebut()` helper:
+Dengan menggunakan helper `terbilang()` and `tersebut()` :
 
 ```php
 <?php
@@ -29,7 +23,7 @@ echo terbilang(421); // empat ratus dua puluh satu (string)
 echo tersebut('empat ratus dua puluh satu'); // 421.0 (float)
 ```
 
-Old examples:
+Contoh lama:
 
 ```php
 <?php
@@ -40,7 +34,7 @@ echo \Nasution\Terbilang::convert(42); // empat puluh dua
 echo \Nasution\Terbilang::revert('empat puluh dua');  // 42.0 (float)
 ```
 
-You can also import the class to make it more convenient to use:
+Anda juga dapat mengimpor kelas agar lebih nyaman digunakan:
 ```php
 <?php
 
@@ -52,7 +46,7 @@ echo Terbilang::convert('123304'); // seratus dua puluh tiga ribu tiga ratus emp
 echo Terbilang::revert('seratus dua puluh tiga ribu tiga ratus empat'); // 123304.0 (float)
 ```
 
-Another examples:
+Contoh lain:
 
 ```php
 echo Terbilang::convert('1000000');          // satu juta
@@ -68,7 +62,7 @@ echo Terbilang::revert('satu kuadriliun'); // 1000000000000000
 echo Terbilang::revert('seratus milyar tiga puluh juta dua puluh ribu sepuluh'); // 100030020010.0
 ```
 
-You can also use dot notation on `Terbilang::convert()` to separate the numbers:
+Anda juga dapat menggunakan notasi titik pada `Terbilang::convert()` untuk memisahkan angka:
 
 ```php
 echo Terbilang::convert('1.300.000');       // satu juta tiga ratus ribu

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nasution;
+namespace Akas;
 
 use SplStack;
 
