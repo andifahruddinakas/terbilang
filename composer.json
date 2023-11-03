@@ -1,7 +1,7 @@
 {
-  "name": "nasution/terbilang",
-  "description": "Convert numbers into words (and vice-versa) in Indonesian language",
-  "homepage": "https://github.com/mul14/terbilang-php",
+  "name": "andifahruddinakas/terbilang",
+  "description": "Mengubah angka menjadi kata (dan sebaliknya) dalam bahasa Indonesia",
+  "homepage": "https://github.com/andifahruddinakas/terbilang",
   "keywords": ["terbilang", "indonesia"],
   "type": "library",
   "license": "WTFPL",
@@ -9,11 +9,15 @@
     {
       "name": "Mulia Arifandi Nasution",
       "email": "mul14.net@gmail.com"
+    },
+    {
+      "name": "Andi Fahruddin Akas",
+      "email": "andifahruddinakas@gmail.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Nasution\\": "src/Nasution"
+      "Akas\\": "src/Akas"
     },
     "files": [
         "src/terbilang.php"
